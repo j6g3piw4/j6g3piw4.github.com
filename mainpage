@@ -1,0 +1,607 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css"
+	rel="stylesheet" />
+<link
+	href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"
+	rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One"
+	rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet" />
+<link href="//cdn.muicss.com/mui-0.9.18/css/mui.min.css"
+	rel="stylesheet" type="text/css" />
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<script src="//cdn.muicss.com/mui-0.9.18/js/mui.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script
+	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Rye|Wallpoet" rel="stylesheet">
+
+<title>Insert title here</title>
+<style type="text/css">
+
+
+#navbar {
+    list-style: none;
+    background-image:url('../Resources/Image/MainPage_Top_Image/white_black_ef.jpg');
+    font-family: 'Rye', cursive;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#navbar li {
+    position: relative;
+    float: left;
+    line-height: 50px;
+        background-image:url('../Resources/Image/MainPage_Top_Image/white_black_ef.jpg');
+        
+    text-align: center;
+   
+}
+
+#navbar li a {
+    position: relative;
+    display: block;
+    padding: 0 14px;
+    line-height: inherit;
+    letter-spacing:2px;
+    color: #000000;
+    text-decoration: none;
+}
+#navbar li a:hover {
+
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+#navbar li:hover,
+#navbar li:hover:before {
+ background: #000000;
+    color:#fff;
+ }
+#navbar li.active, #navbar li.active:before , #navbar li.active a {
+    background: #000000;
+    color:#fff;
+
+}
+
+@-webkit-keyframes blink {
+ 0% {opacity:0.1; transition:all 0.2s;}
+ 15% {opacity:0.2; transition:all 0.2s;}
+ 20% {opacity:0.3; transition:all 0.2s;}
+ 25% {opacity:0.4; transition:all 0.2s;}
+ 30% {opacity:0.5; transition:all 0.2s;}
+ 35% {opacity:0.6; transition:all 0.2s;}
+ 40% {opacity:0.7; transition:all 0.2s;}
+ 45% {opacity:0.8; transition:all 0.2s;}
+ 50% {opacity:0.9; transition:all 0.2s;}
+ 55% {opacity:0.8; transition:all 0.2s;}
+ 60% {opacity:0.7; transition:all 0.2s;} 
+ 65% {opacity:0.6; transition:all 0.2s;}
+ 70% {opacity:0.5; transition:all 0.2s;}
+ 75% {opacity:0.4; transition:all 0.2s;}
+ 80% {opacity:0.3; transition:all 0.2s;}
+ 85% {opacity:0.2; transition:all 0.2s;}
+ 100% {opacity:0.1; transition:all 0.2s;}
+ 
+
+}
+
+.blinkcss {
+ font-weight:bold;
+ animation: blink 0.2s step-end infinite;
+ -webkit-animation: blink 1s step-end infinite;
+}
+
+.thumbnails img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 112px;
+}
+
+ a:link {text-decoration: none;}
+ a:visited {text-decoration: none;}
+
+</style>
+
+</head>
+
+
+
+<body style="background-color:#000000">
+<span>
+<img class="blinkcss" id="page_top" style="visibility:hidden; cursor:pointer; position:fixed; right:3%; bottom:3%; width:3%;" alt="" src="../Resources/Image/MainPage_Top_Image/Top2.png">
+</span>
+<div class="container">
+<div class="row">
+<div class="hidden-xs hidden-sm hidden-md col-lg-12">
+
+
+<div style=" text-align: center;">
+<a id="top_logo" href="../MainPage/MainPage_Top.jsp" style=" opacity: 1;">
+<img style="display: inline-block; margin-left:-2.8%; padding:1%; width:14%; height:34%;" alt="" src="../Resources/Image/MainPage_Top_Image/9mm_2.png">
+<img style="display: inline-block;" alt="" src="../Resources/Image/MainPage_Top_Image/main_2.png">
+</a>
+</div>
+
+<div style="margin-top:1%; margin-left: 7%; ">
+<ul id="navbar">
+    <li><a href="../MainPage/MainPage_Top.jsp">Home</a></li>
+   <li><a href="../News/News_Top.jsp">News</a></li>
+    <li><a href="../Biography/Biography_Top.jsp">Biography</a></li> 
+    <li><a href="../Live/Live_Top.jsp">Live</a></li>
+   <li><a href="../Discography/Discography_Top.jsp">Discography</a></li>
+    <li><a href="../Media/Media_Top.jsp">Media</a></li> 
+    <li><a href="../Gallery/Gallery_Top.jsp">Gallery</a></li>
+    <li><a href="../Contact/Contact_Top.jsp">Contact</a></li>
+    
+    
+</ul>
+</div>
+
+
+<br><br><br>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div style="margin-left: 10.5%; width:77.9%;" class="carousel-inner">
+    <div class="item active">
+      <img src="http://9mm.jp/img/index/main_slider-170322_02.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="http://9mm.jp/img/index/main_slider-170603_003.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="http://9mm.jp/img/index/main_slider-170420.jpg" alt="New York">
+    </div>
+  </div>
+  <!-- Indicators -->
+  
+
+</div>
+
+<br>
+<div>
+<div style="display:inline-block; border:1px solid #fff; margin-left:10.6%; float:left;  color:#fff; font-size:16px; width:50%; height:100%">
+<div style=" margin-left:1%; margin-top: 1.4%;">
+<img style="margin-top:-1%; width:6.4%;" alt="" src="../Resources/Image/MainPage_Top_Image/9mm_2.png"> <span style="vertical-align:-6%; margin-top:1%; background-color: #fff; color:#000000; font-family: 'Rye', cursive;">WHAT'S NEW</span>
+<span class="more" style=" border:1px solid #fff; width:10%; text-align:center; font-size:12px; margin-right:2%; margin-top:0.2%; float: right; cursor: pointer; font-family: 'Rye', cursive;">MORE</span>
+
+<div style=" margin-top:2%; margin-left:1%; padding-top:2%; padding-bottom:2%; border-bottom:1px solid #fff; border-top:1px solid #fff; width:97%; color:#fff; font-size: 12px; white-space: nowrap;overflow: hidden; text-overflow: ellipsis; font-weight: bold;">
+<a class="top_news" href="../News/News_Top.jsp#2017090201" style="opacity: 1; color:#fff;"> 
+<span>
+<span style="padding:1%; padding-bottom:1%; background: -webkit-linear-gradient(top,rgba(0,0,0,1) 5%, red 50%,rgba(0,0,0,1) 95%); box-shadow: 2px 2px 3px black">NEWS</span> 
+</span>
+<span>2017.09.02</span><br>
+<span>キツネツキ「HERE presents『YOU GOT 超 HIGH TENSION』Release Tour ～君をハイテンションにするツアー～」出演決定！
+</span>
+</a>
+</div>
+
+<div style="margin-left:1%; padding-top:2%; padding-bottom:2%; border-bottom:1px solid #fff; width:97%; color:#fff; font-size: 12px; font-weight: bold; white-space: nowrap;overflow: hidden; text-overflow: ellipsis;">
+<a class="top_news" href="../News/News_Top.jsp#2016090201" style="opacity: 1; color:#fff;"> 
+<span>
+<span style="padding:1%; padding-bottom:1%; background: -webkit-linear-gradient(top,rgba(0,0,0,1) 5%, red 50%,rgba(0,0,0,1) 95%); box-shadow: 2px 2px 3px black">NEWS</span> 
+</span>
+<span>2017.09.02</span><br>
+<span>Pyramid ACTグッズ発表！！</span>
+</a>
+</div>
+
+<div style="margin-left:1%; padding-top:2%; padding-bottom:2%; border-bottom:1px solid #fff; width:97%; color:#fff; font-size: 12px; font-weight: bold; white-space: nowrap;overflow: hidden; text-overflow: ellipsis;">
+<a class="top_news" href="#" style="opacity: 1; color:#fff;"> 
+<span><span style="padding:1%; padding-bottom:1%; background: -webkit-linear-gradient(top,rgba(0,0,0,1) 5%, red 50%,rgba(0,0,0,1) 95%); box-shadow: 2px 2px 3px black">NEWS</span> </span>
+<span>2017.09.02</span><br><span>Pyramid ACT LINE LIVEでトーク番組決定！</span>
+</a>
+</div>
+
+<div style="margin-left:1%; padding-top:2%; padding-bottom:2%; border-bottom:1px solid #fff; width:97%; color:#fff; font-size: 12px; font-weight: bold; white-space: nowrap;overflow: hidden; text-overflow: ellipsis;">
+<a class="top_news" href="#" style="opacity: 1; color:#fff;"> 
+<span><span style="padding:1%; padding-bottom:1%; background: -webkit-linear-gradient(top,rgba(0,0,0,1) 5%, red 50%,rgba(0,0,0,1) 95%); box-shadow: 2px 2px 3px black">NEWS</span> </span>
+<span>2017.09.02</span><br><span>キツネツキ「HERE presents『YOU GOT 超 HIGH TENSION』Release Tour ～君をハイテンションにするツアー～」出演決定！</span>
+</a>
+</div>
+
+<div style="margin-left:1%; padding-top:2%; padding-bottom:2%; width:97%; color:#fff; font-size: 12px; font-weight: bold; white-space: nowrap;overflow: hidden; text-overflow: ellipsis;">
+<a class="top_news" href="#" style="opacity: 1; color:#fff;"> 
+<span><span style="padding:1%; padding-bottom:1%; background: -webkit-linear-gradient(top,rgba(0,0,0,1) 5%, red 50%,rgba(0,0,0,1) 95%); box-shadow: 2px 2px 3px black">NEWS</span> </span>
+<span>2017.09.02</span><br><span>キツネツキ「FM802 MINAMI WHEEL 2017」出演決定！</span>
+</a>
+</div>
+
+
+
+</div>
+</div>
+
+<div style="display:inline-block; border:1px solid #fff; margin-top:1%; margin-left:10.6%; float:left;  color:#fff; font-size:16px; width:50%;">
+<div style="margin-left:1%; margin-top: 1.4%;">
+<img style="margin-top:-1%; width:6.4%;" alt="" src="../Resources/Image/MainPage_Top_Image/9mm_2.png"> <span style="vertical-align:-6%; margin-top:1%; background-color: #fff; color:#000000; font-family: 'Rye', cursive;">LIVE INFORMATION</span>
+<span class="more" style=" border:1px solid #fff; width:10%; text-align:center; font-size:12px; margin-right:2%; margin-top:0.2%; float: right; cursor: pointer; font-family: 'Rye', cursive;">MORE</span>
+</div>
+<div>
+<div style="margin-top:2%; margin-left:1.8%; font-size: 14px;  ">2017/09/03(日) 蒲郡ラグーナビーチ [愛知]</div>
+<div style="padding-bottom:1%; margin-top:2%; margin-left:1.8%; font-size: 12px;">
+【イベント名】
+TREASURE05X 2017 -MARCH OF TIME-
+<br>【時間】開場 10:00 / 開演 11:00
+<br>【info】
+出演者、チケット料金などの詳細はオフィシャルホームページをご覧ください。
+<br>
+【ホームページ】http://www.treasure05x.jp/
+<br>
+【問合せ】
+サンデーフォークプロモーション
+(052) 320-9100 
+全日10:00～18:00
+</div>
+</div>
+
+<hr style="margin-top:2%; border:1px solid #fff;">
+
+<div>
+<div style="margin-top:-1%; margin-left:1.8%; font-size: 14px;  ">2017/09/03(日) 蒲郡ラグーナビーチ [愛知]</div>
+<div style="padding-bottom:1%; margin-top:2%; margin-left:1.8%; font-size: 12px;">
+【イベント名】
+TREASURE05X 2017 -MARCH OF TIME-
+<br>【時間】開場 10:00 / 開演 11:00
+<br>【info】
+出演者、チケット料金などの詳細はオフィシャルホームページをご覧ください。
+<br>
+【ホームページ】http://www.treasure05x.jp/
+<br>【問合せ】
+サンデーフォークプロモーション
+(052) 320-9100 
+全日10:00～18:00
+</div>
+</div>
+</div>
+
+
+<div style="display:inline-block; border:1px solid #fff; margin-top:1%; margin-left:10.6%; float:left;  color:#fff; font-size:16px; width:50%;">
+<div style="margin-left:1%; margin-top: 1.4%;">
+<img style="margin-top:-1%; width:6.4%;" alt="" src="../Resources/Image/MainPage_Top_Image/9mm_2.png"> <span style="vertical-align:-6%; margin-top:1%; background-color: #fff; color:#000000; font-family: 'Rye', cursive;">NEW RELEASE</span>
+<span class="more" style=" border:1px solid #fff; width:10%; text-align:center; font-size:12px; margin-right:2%; margin-top:0.2%; float: right; cursor: pointer; font-family: 'Rye', cursive;">MORE</span>
+</div>
+<div>
+<br>
+
+<div style=" height:180px;">
+<img border="0"  style="display:inline-block; vertical-align:top; padding-left:2%; padding-right:2%; padding-top:0.4%; width:190px;" alt="" src="http://9mm.jp/app/discography/39/1.jpg">
+<div style="display:inline-block;" >
+<div style=" font-size: 12px;">
+<div style="margin-top:1%; font-size: 18px;">New Single</div>
+<div style="width:300px; margin-top:5%; font-size: 12px;">サクリファイス<span style="margin-left: 1%;">(2017. 06.07 Release)</span></div><br>
+<span style="margin-top:5%; font-size: 12px; border-top: 1px solid #fff; border-bottom: 1px solid #fff;">GNCA-0498 ¥1,500[tax out]</span><br>
+<div style="margin-top: 17%;">
+<span id="singlemodal" data-toggle="modal" data-target="#singleModal" style="font-family: 'Rye', cursive; cursor:pointer; padding:2%; font-size: 12px; border:1px solid #fff;">
+Show Details
+</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal modal-center fade" id="singleModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myCenterModalLabel">
+  <div class="modal-dialog modal-center modal-lg" role="document">    
+      <!-- Modal content-->
+      <div style="color:#000000;" class="modal-content">
+        <div style="border-bottom: none;" class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+        </div>
+        <div class="modal-body">
+          <div>
+<img border="0"  style="display:inline-block; vertical-align:top; padding-left:2%; padding-right:2%; padding-top:0.4%; width:200px;" alt="" src="http://9mm.jp/app/discography/39/1.jpg">
+<div style="vertical-align:top; display:inline-block;" >
+<div style="font-size: 12px;">
+<div style="margin-top:1%; font-size: 12px;">9th Single</div>
+<div style="margin-top:5%; font-size: 12px;">サクリファイス</div>
+<span style="margin-top:2%; font-size: 12px; border-top: 1px solid #000000; border-bottom: 1px solid #000000;">GNCA-0498 ¥1,500[tax out]</span><br>
+<div>
+1. サクリファイス<br>
+2. 午後の鳥籠<br>
+3. インフェルノ Live Track From TOUR 2016 “太陽が欲しいだけ” 16.10.30 at Zepp Namba
+</div>
+</div>
+</div>
+</div>
+        </div>
+        
+      </div>
+      
+    </div>
+    </div>
+
+<div style="margin-top:2%; height:180px;">
+<img border="0"  style="display:inline-block; vertical-align:top; padding-left:2%; padding-right:2%; padding-top:0.4%; width:190px;" alt="" src="http://9mm.jp/app/discography/38/1.jpg">
+<div style="display:inline-block;" >
+<div style=" font-size: 12px;">
+<div style="margin-top:1%; font-size: 18px;">New Album</div>
+<div style="width:300px; margin-top:5%; font-size: 12px;">BABEL<span style="margin-left: 1%;">(2017. 05.10 Release)</span></div><br>
+<span style="margin-top:5%; font-size: 12px; border-top: 1px solid #fff; border-bottom: 1px solid #fff;">GNCA-0498 ¥1,500[tax out]</span><br>
+<div style="margin-top: 17%;">
+<span id="albummodal" data-toggle="modal" data-target="#albumModal" style="font-family: 'Rye', cursive; cursor:pointer; padding:2%; font-size: 12px; border:1px solid #fff;">
+Show Details
+</span>
+</div>
+</div>
+</div>
+</div>
+
+ <div class="modal modal-center fade" id="albumModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myCenterModalLabel">
+  <div class="modal-dialog modal-center modal-lg" role="document">
+      <!-- Modal content-->
+      <div style="color:#000000;" class="modal-content">
+        <div style="border-bottom: none;" class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+        </div>
+        <div class="modal-body">
+          <div>
+<img border="0"  style="display:inline-block; vertical-align:top; padding-left:2%; padding-right:2%; padding-top:0.4%; width:200px;" alt="" src="http://9mm.jp/app/discography/38/1.jpg">
+<div style="vertical-align:top; display:inline-block;" >
+<div style="font-size: 12px;">
+<div style="margin-top:1%; font-size: 12px;">7th Album</div>
+<div style="margin-top:5%; font-size: 12px;">BABEL</div>
+<div style="margin-top:5%; font-size: 12px; border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
+<div>
+2017. 05.10 Release<br>
+通常盤(CD): COCP-39909 ￥2,593[tax out]<br>
+初回限定盤Special Edition(CD+DVD+スコアブック): COZP-1326～8 ￥6,481[tax out]<br>
+初回限定盤(CD+DVD): COZP-1308～9 ￥3,333[tax out]<br>
+アナログ盤(LP+ダウンロードカード): COZA-1320～1 ￥3,333[tax out]
+</div>
+</div><br>
+<br>
+<div>
+【通常盤】<br>
+[CD]<br>
+1. ロング・グッドバイ<br>
+2. Story of Glory<br>
+3. I.C.R.A<br>
+4. ガラスの街のアリス<br>
+5. 眠り姫<br>
+6. 火の鳥<br>
+7. Everyone is fighting on this stage of lonely<br>
+8. バベルのこどもたち<br>
+9. ホワイトアウト<br>
+10. それから<br>
+<br>
+【初回限定盤】<br>
+[CD]<br>
+通常盤同様<br>
+
+[DVD］<br>
+■「TOUR 2016 “太陽が欲しいだけ”」 16.11.05 At 豊洲PIT<br> 
+太陽が欲しいだけ<br>
+Discommunication<br>
+モーニングベル<br>
+インフェルノ<br>
+ロンリーボーイ<br>
+スタンドバイミー<br>
+反逆のマーチ<br>
+Lost!!<br>
+The Revolutionary<br>
+生命のワルツ<br>
+Talking Machine<br>
+<br>
+■特典映像「BABEL」レコーディングドキュメンタリー<br>
+
+【初回限定盤SPECIAL EDITION】<br>
+<br>
+[CD]<br>
+通常盤同様<br>
+<br>
+[DVD］<br>
+初回限定盤同様<br>
+<br>
+[スコアブック]<br>
+メンバー監修「BABEL」バンドスコア<br>
+<br>
+●全形態共通封入特典有り
+</div>
+</div>
+</div>
+</div>
+        </div>
+        
+      </div>
+      
+    </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+<div>
+<div style="display: inline-block; margin-left: 2%; border:1px solid #fff; width:25.7%; height:100%; padding-bottom: 0.6%; ">
+<div style="margin-left:1%; margin-top: 2.8%;"><img style="margin-top:-4%; width:13.6%;" alt="" src="../Resources/Image/MainPage_Top_Image/9mm_2.png"><span  style="font-size:16px;  background-color: #fff; color:#000000; font-family: 'Rye', cursive;">VIDEO</span>
+<span class="more" style=" border:1px solid #fff; width:18%; text-align:center; font-size:12px; margin-right:3.4%; margin-top:0.2%; float: right; cursor: pointer; color:#fff; font-family: 'Rye', cursive;">MORE</span>
+</div>
+<iframe style="margin-top:4%; margin-left: 3%;"  width="272" height="169" src="http://www.youtube.com/embed/CVNy1p3CrVM" frameborder="0" allowfullscreen></iframe>
+<div style="text-align: center; color:#fff; font-weight: bold;">サクリファイス</div>
+<iframe style="margin-top:4%; margin-left: 3%;"  width="272" height="169" src="http://www.youtube.com/embed/uY-QrSbVRW8" frameborder="0" allowfullscreen></iframe>
+<div style="text-align: center; color:#fff; font-weight: bold;">ガラスの街のアリス</div>
+<iframe style="margin-top:4%; margin-left: 3%;"  width="272" height="169" src="http://www.youtube.com/embed/QvzzTBJ3IgY" frameborder="0" allowfullscreen></iframe>
+<div style="text-align: center; color:#fff;">Lost!!</div>
+
+</div>
+	
+
+
+<br>
+<br>
+</div>
+
+<div style="display: inline-block; margin-top:-0.8%;  margin-left: 2%; border:1px solid #fff; width:25.7%; height:100%; ">
+<div style="margin-bottom:2%; margin-left:1%; margin-top: 2.4%;"><img style="margin-top:-2.8%; width:13%;" alt="" src="../Resources/Image/MainPage_Top_Image/9mm_2.png"><span  style="font-size:16px;  background-color: #fff; color:#000000; font-family: 'Rye', cursive;">TWITTER</span>
+</div>
+<a data-theme="dark" width="98%" height="384.4" data-chrome="noheader nofooter noborders  transparent"  class="twitter-timeline" href="https://twitter.com/9mm_official">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
+
+
+<div style="margin-top:1%; color:#fff; border:1px solid #fff; margin-left: 10.6%; width:77.7%; height:100%;">
+<div style="margin-left:1%; margin-top: 1%;">
+<img style="margin-top:-1%; width:4%;" alt="" src="../Resources/Image/MainPage_Top_Image/9mm_2.png"> <span style="vertical-align:-6%; margin-top:1%; background-color: #fff; color:#000000; font-size:16px; font-family: 'Rye', cursive;">GALLERY</span>
+<span class="more" style=" border:1px solid #fff; width:6%; text-align:center; font-size:12px; margin-right:1%;  float: right; cursor: pointer; font-family: 'Rye', cursive;">MORE</span>
+</div>
+<div style=" margin-left:1.4%; padding-bottom: 2%; padding-top: 1.6%;" id="gallery">
+<a class="thumbnails" target="_blank" href="http://9mm.jp/app/gallery/234/1.jpg">
+<img alt="" src="http://9mm.jp/app/gallery/234/1.jpg">
+</a>
+<a class="thumbnails" target="_blank" href="http://9mm.jp/app/gallery/233/1.jpg" style="margin-left:1%;">
+<img alt="" src="http://9mm.jp/app/gallery/233/1.jpg">
+</a>
+<a class="thumbnails" target="_blank" href="http://9mm.jp/app/gallery/232/1.jpg" style="margin-left:1%;">
+<img alt="" src="http://9mm.jp/app/gallery/232/1.jpg">
+</a>
+<a class="thumbnails" target="_blank" href="http://9mm.jp/app/gallery/231/1.jpg" style="margin-left:1%;">
+<img alt="" src="http://9mm.jp/app/gallery/231/1.jpg">
+</a>
+<a class="thumbnails" target="_blank" href="http://9mm.jp/app/gallery/230/1.jpg" style="margin-left:1%;">
+<img alt="" src="http://9mm.jp/app/gallery/230/1.jpg">
+</a>
+<a class="thumbnails" target="_blank" href="http://9mm.jp/app/gallery/229/1.jpg" style="margin-left:1%;">
+<img alt="" src="http://9mm.jp/app/gallery/229/1.jpg">
+</a>
+<a class="thumbnails" target="_blank" href="http://9mm.jp/app/gallery/228/1.jpg" style="margin-left:1%;">
+<img alt="" src="http://9mm.jp/app/gallery/228/1.jpg">
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+</div>
+</div>
+<br>
+
+
+<div style="text-align:center; font-size:10px; font-weight:bold; width:100%; background-color: #fff; color:#000000; padding-top: 2%; padding-bottom: 2%;">
+Copyrights(C)9mm Parabellum Bullet ALL Rights Reserved.
+</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$('#navbar li').click(function() {
+    $(this).addClass('active').siblings('li').removeClass('active');
+});
+
+
+$('document').ready(function(){
+
+	$('#top_logo , .top_news').hover(function(){
+		
+		
+		$(this).css('opacity' , '0.6');
+		$(this).css('transition' , 'all 1s');
+		
+
+	},function(){
+		
+		$(this).css('opacity' , '1');
+		$(this).css('transition' , 'all 1s');
+
+	})
+	
+	$('#page_top').click(function(){
+		
+		$("body").scrollTop(0);
+		
+	})
+	
+	$(window).scroll(function () {
+	    var $this = $(this)
+	    if ($this.scrollTop() > 120) {
+	    	$('#page_top').css('visibility' , 'visible');
+	    	$('#page_top').css('transition' , 'all 0.2s');
+		      
+	    } else {
+		      $('#page_top').css('visibility' , 'hidden');
+		    	$('#page_top').css('transition' , 'all 0.2s');
+
+	    }
+	});
+	
+	$('.more , #singlemodal , #albummodal').hover(function(){
+		
+		
+		$(this).css('background-color' , '#fff');
+		$(this).css('color' , '#000000');
+		$(this).css('transition' , 'all 1s');
+		
+
+	},function(){
+		
+
+		$(this).css('background-color' , '#000000');
+		$(this).css('color' , '#fff');
+		$(this).css('transition' , 'all 1s');
+
+	})
+	
+
+	
+		
+	$('.thumbnails').click(function(){	
+		 window.open(this.href, "_blank", "toolbar=no,scrollbars=no,resizable=yes,top=50,left=200,width=1000,height=600");
+		
+	})
+	
+})
+
+
+
+</script>
+</body>
+</html>
